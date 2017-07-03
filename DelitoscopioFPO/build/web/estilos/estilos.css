@@ -1,0 +1,64 @@
+table
+{
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+table thead tr{
+background: grey;
+  color: white;
+}
+.editar{
+  color: blue;
+  margin: 2px;
+  padding: 2px;
+}
+
+.eliminar{
+  color: red;
+  margin: 2px;
+  padding: 2px;
+}
+
+.editar:hover, .eliminar:hover{
+cursor: pointer;
+}
+
+#div_regusuarios
+{
+  text-align: center;
+  margin-top: 10%;
+}
+
+#tblbuscarusuario
+{
+  border-collapse: collapse;
+}
+
+#tblistarusuarios tr td
+{
+    border: 1px solid black;
+}
+
+#tblistarusuarios tr th
+{
+    border: 1px solid black;
+}
+
+#mensaje
+{
+    color: red;
+}
+
+.error
+{
+    color: red;
+}
+
+.row
+{
+    border: 1px;
+    background: blue;
+}

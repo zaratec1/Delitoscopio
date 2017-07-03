@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link rel="stylesheet" href="css/estilos.css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Inicio de Sesión</title>
+    </head>
+    <body onload="verificar_existencia_usuarios.js">
+        <div class="row">
+            <div class="col l12 m12 s12">
+              <nav>
+                <div class="av-wrapper">
+                  <a class="brannd-logo left" href="#"></a>
+                  <ul class="right">
+                    <li class="active"><a href="index.html"><i class="material-icons left">home</i>Login</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <form id="fusu">
+                <div class="col l12 m12 s12 ">
+                    <div class="row">
+                        <div class="col l4 m4 s12 push-l4 push-m4">
+                            <h2 align='center'>Delitoscopio FPO</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l4 m4 s12 push-l4 push-m4">
+                            <h4 align='center'>Inicio de Sesión</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field  col l4 m4 s12 push-l4 push-m4">
+                            <i class="material-icons prefix">person_pin</i>
+                            <input id="nic_usu" type="text" class="validate">
+                            <label for="nic_usu" id="l_nic_usu">Usuario</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field  col l4 m4 s12 push-l4 push-m4">
+                            <i class="material-icons prefix">vpn_key</i>
+                            <input id="pas_usu" type="password" class="validate">
+                            <label for="pas_usu" id="l_pas_usu">Contraseña</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col l4 m4 s6 push-l4 push-m4">
+                          <a id = "BtnLogin" class="waves-effect waves-light btn"><i class="material-icons left"></i>Login</a>
+                      </div>
+                      <div class="col l4 m4 s6 push-l2 push-m2">
+                          <a id = "BtnRContraseña" style="color: red"><i class="material-icons left"></i><u>Recuperar contraseña</u></a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div id = "mensaje" class="col l4 m4 s12 push-l4 push-m4"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/usuario/validar_inicio_sesion.js"></script>
+    <script type="text/javascript" src="js/usuario/verificar_existencia_usuarios.js"></script>
+
+</html>
